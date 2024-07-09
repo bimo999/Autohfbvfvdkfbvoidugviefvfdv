@@ -1,5 +1,17 @@
 const { Client, GatewayIntentBits } = require('discord.js');
-const port = process.env.PORT || 4000;
+const express = require('express');
+const app = express();
+const PORT = process.env.PORT || 8080;
+
+app.get('/', (req, res) => {
+  res.send('Hello World!');
+});
+
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
+
+
 
 // Replace with the ID of the specific channel
 const targetChannelId = '1241353038237536306';

@@ -1,4 +1,5 @@
 const { Client, GatewayIntentBits } = require('discord.js');
+const port = process.env.PORT || 4000;
 
 // Replace with the ID of the specific channel
 const targetChannelId = '1241353038237536306';

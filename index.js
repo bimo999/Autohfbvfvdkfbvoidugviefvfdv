@@ -13,7 +13,12 @@ app.listen(PORT, () => {
 });
 
 // Replace with the ID of the specific channel
-const targetChannelId = '1241353038237536306';
+const targetChannelIds = [
+  '1241353038237536306', // Original channel
+  '1250585199578710157', // Room 1
+  '1242415802104414239', // Room 2
+  '1247564289028657163', // Room 3
+];
 
 const client = new Client({
   intents: [

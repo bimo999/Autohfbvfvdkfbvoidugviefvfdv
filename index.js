@@ -16,7 +16,6 @@ app.listen(PORT, () => {
 const targetChannelIds = [
   '1241353038237536306', // Original channel
   '1242415802104414239', // Room 2
-  '1241547054254260264', // Room 3
 ];
 
 const client = new Client({
